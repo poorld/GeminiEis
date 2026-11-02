@@ -1,0 +1,18 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.yuy.y3realtime'
+    compileSdk 35
+    ndkVersion '27.2.12479018'
+    defaultConfig {
+        applicationId 'com.yuy.y3realtime.geminieis'
+        minSdk 29
+        targetSdk 34
+        versionCode 2
+        versionName '2.0.0-causal-live'
+        ndk { abiFilters 'arm64-v8a','armeabi-v7a' }
+        externalNativeBuild { cmake { cppFlags '-std=c++17 -O3 -Wall -Wextra' } }
+    }
+    buildTypes { debug { debuggable true; jniDebuggable true }; release { minifyEnabled false } }
+    externalNativeBuild { cmake { path 'src/main/cpp/CMakeLists.txt'; version '3.22.1' } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_11; targetCompatibility JavaVersion.VERSION_11 }
+}
