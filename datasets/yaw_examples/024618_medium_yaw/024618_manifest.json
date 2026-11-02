@@ -1,0 +1,45 @@
+{
+  "id": "024618",
+  "label": "Medium-amplitude repeated bilateral yaw",
+  "original_capture": "YuyEIS2 EIS OFF, 2560x1440, same-source used in V7 golden rendering",
+  "source_preserved_byte_exact": true,
+  "videos": {
+    "source_eis_off": {
+      "name": "024618_source_no_eis_2560x1440.mp4",
+      "file_size_bytes": 17541708,
+      "sha256": "5523ff81ce5c80859f9e4b3e7919409576ca40f7c986dcd4768bbadb1aead1aa",
+      "width": 2560,
+      "height": 1440,
+      "frame_count": 295,
+      "fps_container": 29.304571,
+      "decoded_first_frame": true
+    },
+    "v7_golden_render": {
+      "name": "024618_golden_v7_1920x1080_h264.mp4",
+      "file_size_bytes": 9502033,
+      "sha256": "ad1eb0366b964381505d6344c393c98e82c84c78c67ac271c45a6e11c8114a89",
+      "width": 1920,
+      "height": 1080,
+      "frame_count": 291,
+      "fps_container": 29.605068,
+      "decoded_first_frame": true
+    }
+  },
+  "source_gyro_csv": "024618_imu.csv",
+  "source_video_pts_csv": "024618_video_pts.csv",
+  "source_camera_metadata_csv": "024618_camera_metadata.csv",
+  "recorded_frame_metadata_matches": 294,
+  "imu_count": 4238,
+  "video_pts_count": 295,
+  "contact_sheet": {
+    "name": "024618_preview_contact_sheet.jpg",
+    "approximate_time_alignment": true,
+    "warning": "Frame fractions are illustrative, NOT exact timestamp-matched correspondences"
+  },
+  "caveats": [
+    "Source MP4 and golden render do not contain identical numbers of frames. Do not compare by naive frame index.",
+    "Golden is a reference offline render, not a fresh Y1 live recording or proof of bit-exact device parity.",
+    "Geometry optimization on compressed/re-encoded golden video is discouraged; use the original source MP4 + gyro metadata.",
+    "The contact sheet is for visual inspection; samples were selected at similar fractions of each recording, not strict timestamp alignment."
+  ]
+}

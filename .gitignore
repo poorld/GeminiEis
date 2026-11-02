@@ -7,6 +7,8 @@
 **/out/
 **/__pycache__/
 *.mp4
+# Two explicitly selected sample recordings may be checked into this source repo.
+!datasets/yaw_examples/*/*.mp4
 *.mov
 *.mkv
 *.avi
